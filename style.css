@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
 }
@@ -20,13 +24,15 @@ a:hover {
 }
 
 nav {
-  position: relative;
   width: 100%;
   height: 60px;
   background-color: #000;
   font-size: 1.1rem;
   text-transform: uppercase;
   font-weight: bold;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .3);
+  position: sticky;
+  top: 0;
 }
 
 nav ul {
@@ -53,6 +59,7 @@ nav label {
   padding: 2px;
   margin-right: 8px;
   right: 0;
+  cursor: pointer;
 }
 
 nav label span {
@@ -66,11 +73,26 @@ nav label:active span {
   background-color: #09f;
 }
 
+header {
+  color: #fff;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, .5), rgba(0, 0, 0, 1)),
+    url('./images/header.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
 @media (max-width: 768px) {
   nav ul {
     display: none;
     background-color: #000;
     height: 100vh;
+    width: 100%;
+    top: 0;
+    position: absolute;
     flex-direction: column;
     justify-content: center;
     gap: 40px;
