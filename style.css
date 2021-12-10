@@ -75,6 +75,7 @@ nav label:active span {
 
 header {
   color: #fff;
+  text-align: center;
   height: 70vh;
   display: flex;
   justify-content: center;
