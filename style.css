@@ -107,6 +107,25 @@ section {
   margin-left: 10px;
 }
 
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.fotos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.fotos picture {
+  padding: 4px;
+}
+
+.fotos img {
+  width: 100%;
+}
+
 @media (max-width: 768px) {
   nav ul {
     display: none;
