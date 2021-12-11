@@ -167,11 +167,27 @@ section:nth-child(even) {
 
 footer {
   width: 100%;
-  padding: 1rem 3rem;
+  padding: 1.4rem 3rem;
   text-align: center;
   background-color: #ddd;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer-section {
+  display: grid;
+  place-content: center;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .social-networks {
@@ -180,6 +196,14 @@ footer {
   justify-content: center;
   align-items: center;
   gap: .8rem;
+}
+
+.social-networks a {
+  transition: transform .2s;
+}
+
+.social-networks a:hover {
+  transform: scale(1.1);
 }
 
 .social-networks svg {
