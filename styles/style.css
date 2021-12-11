@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: Avalors;
-  src: url('fonts/Avalors.otf');
+  src: url('../fonts/Avalors.otf');
 }
 
 html {
@@ -170,7 +170,7 @@ header {
   justify-content: center;
   align-items: center;
   background-image: linear-gradient(to top, rgba(0, 0, 0, .5), rgba(0, 0, 0, 1)),
-    url('./images/header.jpg');
+    url('../images/header.jpg');
   background-size: cover;
   background-position: center;
 }
