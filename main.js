@@ -5,7 +5,6 @@ modal.addEventListener('click', e => {
   if (!imgViewer.contains(e.target)) modal.classList.add('hidden')
 })
 
-
 const closeImgViewer = document.querySelector('.img-viewer button')
 closeImgViewer.addEventListener('click', () => {
   modal.classList.add('hidden')
@@ -20,5 +19,14 @@ photos.forEach(photo => {
     img.setAttribute('src', src)
     img.setAttribute('alt', alt)
     modal.classList.remove('hidden')
+  })
+})
+
+const navInput = document.querySelector('#menu-toggle')
+const navLinks = document.querySelectorAll('nav a')
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    if (window.innerWidth <= 768) navInput.checked = false
   })
 })
