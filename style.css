@@ -163,7 +163,7 @@ section {
 }
 
 section:nth-child(even) {
-  background-color: #111;
+  background-color: #222;
   color: #fff;
 }
 
@@ -253,9 +253,13 @@ footer {
   font-size: 1.2rem;
 }
 
-footer img {
+.ies-logo {
   width: 100px;
   margin: 0 auto;
+}
+
+.ies-logo img {
+  width: 100%;
 }
 
 .footer-section {
