@@ -30,3 +30,15 @@ navLinks.forEach(link => {
     if (window.innerWidth <= 768) navInput.checked = false
   })
 })
+
+const navProgress = document.querySelector('nav progress')
+window.addEventListener('scroll', () => {
+  if (window, innerWidth > 768) {
+    const windowHeight = window.innerHeight
+    const scroll = window.scrollY
+    const pageHeight = document.body.clientHeight
+  
+    const progress = (scroll / (pageHeight - windowHeight)) * 100
+    navProgress.value = progress
+  }
+})
